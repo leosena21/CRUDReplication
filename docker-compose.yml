@@ -2,9 +2,13 @@ version: "3"
 services:
   web:
     # replace username/repo:tag with your name and image details
-    image: leosena21/cajahyba:latest ## e.g. image: cajahyba/auladocker:aula2 
+    image: paca ## e.g. image: cajahyba/auladocker:aula2 
+    deploy:
+      replicas: 5
+      restart_policy:
+        condition: on-failure
     ports:
-      - "32774:80"
+      - "8080:80"
     environment:
       - "ASPNETCORE_URLS=http://0.0.0.0"
       - "ASPNETCORE_ENVIRONMENT=Development"
