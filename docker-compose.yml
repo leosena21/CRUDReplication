@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web:
+    # replace username/repo:tag with your name and image details
+    image: leosena21/cajahyba:latest ## e.g. image: cajahyba/auladocker:aula2 
+    ports:
+      - "32774:80"
+    environment:
+      - "ASPNETCORE_URLS=http://0.0.0.0"
+      - "ASPNETCORE_ENVIRONMENT=Development"
+    networks:
+      - webnet
+networks:
+  webnet:

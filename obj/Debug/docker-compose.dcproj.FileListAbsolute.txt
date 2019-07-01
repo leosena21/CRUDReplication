@@ -1,0 +1,5 @@
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\bin\Debug\crudmysql.dll
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\bin\Debug\crudmysql.pdb
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Debug\docker-compose.dcproj.CopyComplete

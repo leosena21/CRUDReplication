@@ -1,0 +1,11 @@
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\bin\Release\netcoreapp2.0\crudmysql.deps.json
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\bin\Release\netcoreapp2.0\crudmysql.runtimeconfig.json
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\bin\Release\netcoreapp2.0\crudmysql.runtimeconfig.dev.json
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\bin\Release\netcoreapp2.0\crudmysql.dll
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\bin\Release\netcoreapp2.0\crudmysql.pdb
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Release\netcoreapp2.0\crudmysql.csprojAssemblyReference.cache
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Release\netcoreapp2.0\crudmysql.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Release\netcoreapp2.0\crudmysql.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Release\netcoreapp2.0\crudmysql.AssemblyInfo.cs
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Release\netcoreapp2.0\crudmysql.dll
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Release\netcoreapp2.0\crudmysql.pdb

@@ -1,0 +1,17 @@
+C:\Users\Leonardo\Desktop\crudmysql\crudmysql
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=crudmysql
+--content-root=C:\Users\Leonardo\Desktop\crudmysql\crudmysql
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Home\About.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Home\Contact.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Home\Index.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Livros\Create.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Livros\Delete.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Livros\Details.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Livros\Edit.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Livros\Index.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Shared\Error.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Shared\_Layout.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\_ViewImports.cshtml
+--file=C:\Users\Leonardo\Desktop\crudmysql\crudmysql\Views\_ViewStart.cshtml
