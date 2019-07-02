@@ -15,44 +15,44 @@ services:
         networks:
           - webnet
 
-    mysql_master:
-        image: actency/docker-mysql-replication:5.7
-        environment:
-          MYSQL_ROOT_PASSWORD: "mysqlroot"
-          MYSQL_DATABASE: "example"
-          MYSQL_USER: "example_user"
-          MYSQL_PASSWORD: "mysqlpwd"
-          REPLICATION_USER: "replication_user"
-          REPLICATION_PASSWORD: "myreplpassword"
+    mysql-master:
+        image: 'bitnami/mysql:latest'
         ports:
           - "7701:3306"
-        volumes:
-          - /data/mastermysql:/var/lib/mysqlmaster
+        environment:
+          - MYSQL_REPLICATION_MODE=master
+          - MYSQL_REPLICATION_USER=repl_user
+          - MYSQL_REPLICATION_PASSWORD=repl_password
+          - MYSQL_ROOT_PASSWORD=master_root_password
+          - MYSQL_USER=example_user
+          - MYSQL_PASSWORD=mysqlpwd
+          - MYSQL_DATABASE=example
+         
         networks:
             webnet:
-             ipv4_address: 10.0.0.3
-             aliases:
-               - "pgcluster"            
-
-    mysql_slave:
-        image: actency/docker-mysql-replication:5.7
-        environment:
-          MYSQL_ROOT_PASSWORD: "mysqlroot"
-          MYSQL_DATABASE: "example"
-          MYSQL_USER: "example_user"
-          MYSQL_PASSWORD: "mysqlpwd"
-          REPLICATION_USER: "replication_user"
-          REPLICATION_PASSWORD: "myreplpassword"
-          #CHANGE MASTER TO MASTER_HOST:'10.0.0.10'
+                ipv4_address: 10.0.0.3
+                aliases:
+                - "pgcluster"            
+          
+    mysql-slave:
+        image: 'bitnami/mysql:latest'
         ports:
           - "7702:3306"
-        volumes:
-          - /data/mastermysql:/var/lib/mysqlslave
+        depends_on:
+          - mysql-master
+        environment:
+          - MYSQL_REPLICATION_MODE=slave
+          - MYSQL_REPLICATION_USER=repl_user
+          - MYSQL_REPLICATION_PASSWORD=repl_password
+          - MYSQL_MASTER_HOST=mysql-master
+          - MYSQL_MASTER_PORT_NUMBER=3306
+          - MYSQL_MASTER_ROOT_PASSWORD=master_root_password
+        
         networks:
             webnet:
-             aliases:
-               - "pgcluster"
              ipv4_address: 10.0.0.4
+             aliases:
+               - "pgcluster"                 
                 
 networks:        
    webnet:
