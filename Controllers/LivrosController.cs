@@ -52,7 +52,6 @@ namespace crudmysql.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Autor,Preco,Lancamento")] Livro livro)
         {
             if (ModelState.IsValid)
@@ -84,7 +83,6 @@ namespace crudmysql.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Autor,Preco,Lancamento")] Livro livro)
         {
             if (id != livro.Id)
@@ -135,7 +133,6 @@ namespace crudmysql.Controllers
 
         // POST: Livros/Delete/5
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var livro = await _context.Livros.SingleOrDefaultAsync(m => m.Id == id);
