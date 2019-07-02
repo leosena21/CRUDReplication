@@ -20,3 +20,14 @@ C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Debug\netcoreapp2.0\crudmysql.
 C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Debug\netcoreapp2.0\crudmysql.AssemblyInfo.cs
 C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Debug\netcoreapp2.0\crudmysql.dll
 C:\Users\Leonardo\Desktop\crudmysql\crudmysql\obj\Debug\netcoreapp2.0\crudmysql.pdb
+C:\Users\Gabriel\Downloads\CRUDReplication-master\bin\Debug\netcoreapp2.0\crudmysql.deps.json
+C:\Users\Gabriel\Downloads\CRUDReplication-master\bin\Debug\netcoreapp2.0\crudmysql.runtimeconfig.json
+C:\Users\Gabriel\Downloads\CRUDReplication-master\bin\Debug\netcoreapp2.0\crudmysql.runtimeconfig.dev.json
+C:\Users\Gabriel\Downloads\CRUDReplication-master\bin\Debug\netcoreapp2.0\crudmysql.dll
+C:\Users\Gabriel\Downloads\CRUDReplication-master\bin\Debug\netcoreapp2.0\crudmysql.pdb
+C:\Users\Gabriel\Downloads\CRUDReplication-master\obj\Debug\netcoreapp2.0\crudmysql.csprojAssemblyReference.cache
+C:\Users\Gabriel\Downloads\CRUDReplication-master\obj\Debug\netcoreapp2.0\crudmysql.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Downloads\CRUDReplication-master\obj\Debug\netcoreapp2.0\crudmysql.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Downloads\CRUDReplication-master\obj\Debug\netcoreapp2.0\crudmysql.AssemblyInfo.cs
+C:\Users\Gabriel\Downloads\CRUDReplication-master\obj\Debug\netcoreapp2.0\crudmysql.dll
+C:\Users\Gabriel\Downloads\CRUDReplication-master\obj\Debug\netcoreapp2.0\crudmysql.pdb

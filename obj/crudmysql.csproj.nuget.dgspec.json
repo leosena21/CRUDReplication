@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leonardo\\Desktop\\crudmysql\\crudmysql\\crudmysql.csproj": {}
+    "C:\\Users\\Gabriel\\Downloads\\CRUDReplication-master\\crudmysql.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leonardo\\Desktop\\crudmysql\\crudmysql\\crudmysql.csproj": {
+    "C:\\Users\\Gabriel\\Downloads\\CRUDReplication-master\\crudmysql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\crudmysql\\crudmysql\\crudmysql.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel\\Downloads\\CRUDReplication-master\\crudmysql.csproj",
         "projectName": "crudmysql",
-        "projectPath": "C:\\Users\\Leonardo\\Desktop\\crudmysql\\crudmysql\\crudmysql.csproj",
-        "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leonardo\\Desktop\\crudmysql\\crudmysql\\obj\\",
+        "projectPath": "C:\\Users\\Gabriel\\Downloads\\CRUDReplication-master\\crudmysql.csproj",
+        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gabriel\\Downloads\\CRUDReplication-master\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -56,7 +56,6 @@
               "version": "[2.0.0, )"
             },
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.0, )",
               "autoReferenced": true

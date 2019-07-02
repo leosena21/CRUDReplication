@@ -1,18 +1,71 @@
 version: "3"
 services:
-  web:
-    # replace username/repo:tag with your name and image details
-    image: paca ## e.g. image: cajahyba/auladocker:aula2 
-    deploy:
-      replicas: 5
-      restart_policy:
-        condition: on-failure
-    ports:
-      - "8080:80"
-    environment:
-      - "ASPNETCORE_URLS=http://0.0.0.0"
-      - "ASPNETCORE_ENVIRONMENT=Development"
-    networks:
-      - webnet
-networks:
-  webnet:
+    web:
+        # replace username/repo:tag with your name and image details
+        image: paca ## e.g. image: cajahyba/auladocker:aula2 
+        deploy:
+          replicas: 5
+          restart_policy:
+            condition: on-failure
+        ports:
+          - "8080:80"
+        environment:
+          - "ASPNETCORE_URLS=http://0.0.0.0"
+          - "ASPNETCORE_ENVIRONMENT=Development"
+        networks:
+          - webnet
+
+    mysql_master:
+        image: actency/docker-mysql-replication:5.7
+        environment:
+          MYSQL_ROOT_PASSWORD: "mysqlroot"
+          MYSQL_DATABASE: "example"
+          MYSQL_USER: "example_user"
+          MYSQL_PASSWORD: "mysqlpwd"
+          REPLICATION_USER: "replication_user"
+          REPLICATION_PASSWORD: "myreplpassword"
+        ports:
+          - "7701:3306"
+        volumes:
+          - /data/mastermysql:/var/lib/mysqlmaster
+        networks:
+            webnet:
+             ipv4_address: 10.0.0.3
+             aliases:
+               - "pgcluster"            
+
+    mysql_slave:
+        image: actency/docker-mysql-replication:5.7
+        environment:
+          MYSQL_ROOT_PASSWORD: "mysqlroot"
+          MYSQL_DATABASE: "example"
+          MYSQL_USER: "example_user"
+          MYSQL_PASSWORD: "mysqlpwd"
+          REPLICATION_USER: "replication_user"
+          REPLICATION_PASSWORD: "myreplpassword"
+          #CHANGE MASTER TO MASTER_HOST:'10.0.0.10'
+        ports:
+          - "7702:3306"
+        volumes:
+          - /data/mastermysql:/var/lib/mysqlslave
+        networks:
+            webnet:
+             aliases:
+               - "pgcluster"
+             ipv4_address: 10.0.0.4
+                
+networks:        
+   webnet:
+    ipam:
+      driver: default
+      config:
+        - subnet: "10.0.0.0/24"
+
+   
+
+   
+    
+
+  
+  
+  
