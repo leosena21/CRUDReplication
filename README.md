@@ -1,5 +1,18 @@
 "# CRUDReplication" 
 
+docker swarm init
+docker build -t paca .
+docker stack deploy -c docker-compose.yml livrariadocajah
+
+docker service ls
+
+CREATE TABLE `example`.`Livros` (
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  `Autor` LONGTEXT NULL,
+  `Lancamento` DATETIME NULL,
+  `Nome` LONGTEXT NULL,
+  `Preco` DECIMAL(65,30) NULL,
+  PRIMARY KEY (`Id`));
 
 https://hub.docker.com/r/actency/docker-mysql-replication/
 
@@ -26,4 +39,4 @@ docker run -d \
  --link mysql_master:master \
  actency/docker-mysql-replication:5.7
 
-Verificar inserir portas e verificar a replicação;
+Verificar inserir portas e verificar a replicaÃ§Ã£o;
