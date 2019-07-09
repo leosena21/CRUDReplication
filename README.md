@@ -25,7 +25,9 @@ Criar dois conteineres de Banco de dados onde o principal receberá as requisiç
 # Como rodar o CRUDReplication:
 
 docker swarm init
+
 docker build -t paca .
+
 docker stack deploy -c docker-compose.yml livrariadocajah
 
 docker service ls
