@@ -32,6 +32,8 @@ docker stack deploy -c docker-compose.yml livrariadocajah
 
 docker service ls
 
+Acessar um banco de dados e inserir o proximo comando:
+
 CREATE TABLE `example`.`Livros` (
   `Id` INT NOT NULL AUTO_INCREMENT,
   `Autor` LONGTEXT NULL,
@@ -40,9 +42,17 @@ CREATE TABLE `example`.`Livros` (
   `Preco` DECIMAL(65,30) NULL,
   PRIMARY KEY (`Id`));
   
+# Portas da aplicação:  
   Aplicação web rodando em porta 8080
+  
   Mysql_Master em 7701
+  
   Mysel_Slave em 7702
+  
   Demais configurações acessar o docker-compose.yml
 
+# Referencias:  
+
 Banco Mysql: https://hub.docker.com/r/actency/docker-mysql-replication/
+
+CRUD: https://www.youtube.com/watch?v=5iw_rcQOpCw
