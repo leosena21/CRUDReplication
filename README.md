@@ -1,4 +1,4 @@
-Aplicação desenvolvida pelos estudantes [Leonardo Sena](https://www.github.com/leosena21), [Bruna Andrade](https://www.github.com/brunandrade), [Tarcio Carvalho](https://www.github.com/Tarcioc2) e [Gabriel Luiz](https://github.com/gabrielluiz97) do curso de Engenharia de Computação para obtenção de nota da 3ª Unidade de Sistemas Distribuidos.
+Aplicação desenvolvida pelos estudantes [Leonardo Sena](https://www.github.com/leosena21), [Bruna Cardoso Andrade](https://www.github.com/brunandrade), [Tarcio Carvalho](https://www.github.com/Tarcioc2) e [Gabriel Luiz](https://github.com/gabrielluiz97) do curso de Engenharia de Computação para obtenção de nota da 3ª Unidade de Sistemas Distribuidos.
 
 # Informações:
 
